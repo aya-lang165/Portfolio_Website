@@ -46,17 +46,45 @@ The interface was designed with a minimalist and professional approach, combinin
 - JavaScript
 - Responsive Web Design
 
-## 📂 Project Structure
+# My First React JS
+
+Application web développée avec **React.js** et **Vite**.
+
+## 📁 Structure du projet
 
 ```text
-portfolio/
-├── assets/
-│   ├── images/
-│   ├── icons/
-│   └── ...
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── index.html
+my_first_react_js/
+│
+├── node_modules/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │   ├── localhost.png
+│   │   └── vite.svg
+│   │
+│   ├── components/
+│   │   ├── common/
+│   │   │   ├── footer.jsx
+│   │   │   └── header.jsx
+│   │   │
+│   │   └── data/
+│   │       ├── image/
+│   │       └── dummydata.jsx
+│   │
+│   ├── home/
+│   │   ├── App.jsx
+│   │   ├── counter.jsx
+│   │   ├── hero.jsx
+│   │   └── home.jsx
+│   │
+│   ├── pages/
+│   │
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── .oxlintrc.json
+├── package.json
 └── README.md
