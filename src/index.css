@@ -1,0 +1,598 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+  margin:0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  
+}
+header .first{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 60px;
+}
+.tag{
+  margin-top: 44px;
+  font-family: Poppins;
+}
+.tag .elements{
+  margin-left: 30px;
+  text-decoration: none;
+  color: yellow;
+}
+.tag .elements:hover{
+  font-weight: 600;
+}
+button{
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+button:hover{
+  color: goldenrod;
+}
+.toggle{
+  cursor: pointer;
+  color: rgb(219, 221, 160);
+  display: none;
+}
+header{
+  background-color: rgb(46, 46, 46);
+  position: sticky;
+  z-index: 999;
+}
+
+@media screen and (max-width:768px){
+  header .tag{
+    display:none;
+  }
+  header a{
+    width:100%;
+    display: block;
+    color: yellow;
+    text-decoration: none;
+  }
+  .toggle{
+    display:block;
+    background: none;
+
+  }
+  .hideMenu{
+    display:block;
+    position: absolute;
+    top:19vh;
+    left: 0vh;
+    width:100%;
+    height: 45vh;
+    padding: 20px;
+    background-color: rgba(33, 33, 32, 0.92);
+    line-height: 32px;
+    z-index: 2;
+  }
+  header a:hover{
+  font-weight: 600;
+  
+  }
+  section{
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .hero{
+    overflow-x:hidden;
+  }
+  .services::-webkit-scrollbar{
+    width: 10px;
+  }
+}
+.hero{
+  width: 100%;
+  justify-items: center;
+  height: 100vh;
+  background-image: url("./components/data/image/gray.png");
+  z-index: -1;
+  position:relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+.parag{
+  justify-content: center;
+  text-align: center;
+  padding-top: 10%;
+  transform: translateY(10vh);
+}
+.parag p{
+  border:1px solid transparent;
+  width: 100vh;
+  text-decoration:none;
+  font-family: Poppins;
+  
+}
+.parag h3{
+  color: white;
+}
+.parag h1{
+  font-size: 40px;
+  color:yellow;
+  font-family: Poppins;
+}
+.port img{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  transform: translateY(35px);
+  box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.233);
+
+}
+.port{
+  border: 1px solid transparent;
+  width: 50%;
+  transform: translateY(120px);
+  display: flex;
+  text-align: left;
+  padding: 20px;
+  
+}
+.about{
+  justify-items: center;
+  background-color: rgb(53, 53, 53);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height:100vh;
+  transform: translateY(-0vh);
+}
+.port div p{
+  margin-left: 10px;
+}
+@media screen and (max-width:768px){
+  .port{
+    width: 100%;
+  }
+  article{
+    overflow-x:scroll;
+  }
+  article::-webkit-scrollbar{
+    width: 10px;
+  }
+}
+.heading{
+  margin-left:10px;
+  color: yellow;
+  margin-bottom: 8px;
+}
+.buttons{
+  margin-left:10px;
+  justify-content: space-between;
+}
+.buttons .button1{
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 20px;
+}
+.buttons .button1{
+  border: 2px solid black;
+  padding: 10px;
+  background-color: rgb(234, 234, 219);
+  border-radius: 20px;
+}
+.buttons .button2{
+  border: 2px solid white;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.buttons .button1:hover,.button2:hover{
+  background-color: goldenrod;
+  color: white;
+}
+/*________________________Services______________________*/
+.container{
+  border: 1px solid transparent;
+  padding: 20px;
+  width:300px;
+  height: 210px;
+  background-color: rgba(0, 0, 0, 0.89);
+  
+
+  
+}
+.box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  justify-content: center;
+  padding: 30px;
+  padding-top: 70px;
+  margin-top: 20px;
+  
+}
+section{
+  height: 100vh;
+  justify-items: center;
+}
+.h2{
+  text-align: center;
+  transform: translateY(60px);
+  font-family: Poppins;
+  color: yellow;
+}
+.container i{
+  color: yellow;
+  
+}
+.container h2{
+  margin-bottom: 20px;
+  margin-top: 10px;
+  color: wheat;
+  font-family: Poppins;
+}
+.container p{
+  color: white;
+  font-family: Poppins;
+  font-size: 15px;
+}
+.services{
+  background-color: rgb(46, 46, 46);
+  height: 110vh;
+}
+.statics{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:0;
+  justify-content: center;
+  border: 1px solid transparent ;
+  width: 100%;
+  height: 11rem;
+  padding-top: 38px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.static {
+  justify-items: center;
+  text-align: center;
+  font-family: Poppins;
+}
+.static i{
+  color:white;
+
+}
+.static h2{
+  color: yellow;
+}
+.static p{
+  color: white;
+}
+.counter{
+  height: 11rem;
+  width: 100%;
+  
+}
+.counter{
+  background-color: black;
+}
+/*@keyframes appear {
+  from{
+    opacity:0;
+    scale: 0,5;
+
+  }
+  to{
+    opacity:1;
+    scale: 1;
+  }
+}
+.services{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range:entry 0% cover 40%;
+
+}
+*/
+.shoes{
+  width: 50vh;
+  z-index: 3;
+  cursor: pointer;
+  height: 40vh;
+  
+}
+.cadres{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+  border: 2px solid transparent;
+  padding: 150px;
+  justify-content: center;
+  
+  
+}
+/*.desc{
+  position: relative;
+  z-index: 999;
+  top:-150px;
+  right: -100px;
+}
+*/
+.desc{
+  position: relative;
+  top:-150px;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+
+
+}
+.desc::after{
+  position: absolute;
+  content: "";
+  top:-92px;
+  padding-top: -50px;
+  left: 0;
+  width: 50vh;
+  height: 40vh;
+  z-index: -2;
+  background-color: rgba(255, 255, 0, 0.39);
+  transition: 0,5s; 
+  
+}
+
+.desc:hover{
+  opacity: 1;
+ 
+}
+.btns{
+  
+  display: grid;
+  grid-template-columns: repeat(20,1fr);
+  margin-left: 37%;
+  gap: 20px;
+  transform: translateY(20vh);
+}
+.btns button{
+  border: 2px solid yellow;
+  color: white;
+  border-radius: 20px;
+  padding: 8px;
+  font-family: Poppins;
+}
+.package h1{
+  text-align: center;
+  transform: translateY(10vh);
+  color: yellow;
+  font-family: Poppins;
+  
+}
+article{
+  height: 170vh;
+  background-color: black;
+}
+.btns button:hover{
+  background: yellow;
+}
+
+/*_________________________testimonials_____________________*/
+.imgTest{
+  width: 20vh;
+  cursor: pointer;
+  height: 20vh;
+  border-radius: 50%;
+  border: solid 5px yellow;
+  object-fit: cover;
+  
+}
+.testimonials{
+  justify-self: center;
+  justify-items: center;
+  width: 100%;
+  background-color: rgb(20, 18, 18);
+}
+.k1{
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  background-color: rgb(20, 18, 18);
+  margin-bottom: 5rem;
+  color: white;
+  font-family: Poppins;
+  padding: 20px;
+  margin-top: 70px;
+}
+.paragraphe{
+ width:50vh;
+ font-size: 14px;
+}
+.testimonials h1{
+  font-size: 20px;
+}
+.testimonials h2{
+  font-size: 15px;
+  color: yellow;
+}
+.testimonials i{
+  background-color: rgb(64, 64, 53);
+  padding-top: 10px;
+  border-radius: 50%;
+  width: 50px;
+}
+
+.opp {
+    width: 100%;
+    max-width: 900px;
+    
+}
+/*____________________________Blog__________________________________________*/
+.carre1{
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 30px;
+  margin-top: 10vh;
+}
+.carre{
+  padding: 20vh;
+}
+.k2{
+  border: 1px solid transparent;
+  height: 65vh;
+  width: 52.2vh;
+  font-family: Poppins;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgb(45, 45, 45);
+  
+}
+.imgTest1{
+  height: 34vh;
+  object-fit: cover;
+  width: 52vh;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+}
+.carre1 p{
+ text-align: left;
+ padding: 10px;
+ color: white;
+ padding-left: 18px;
+ font-size: 13px;
+ padding-top: 25px;
+
+}
+
+.carre1 h3{
+ text-align: left;
+ padding-left: 18px;
+ font-size: 16px;
+ padding-top: 10px;
+ color: white;
+}
+
+.carre1 h4{
+ text-align: left;
+ padding-left: 18px;
+ color: yellow;
+ 
+}
+.carre h1{
+  text-align: center;
+  color: yellow;
+  font-family: Poppins;
+}
+.Blog{
+  background-color: black;
+  height: 125vh;
+  
+
+}
+/*____________________________contact__________________________*/
+.inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+.blocs{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 7vh;
+  margin-top: 10vh;
+}
+.input{
+  display: flex;
+  height: 6vh;
+  gap: 5px;
+
+}
+.subject{
+  width: 70vh;
+  height: 6vh;
+  padding: 10px;
+  outline: none;
+}
+.contact h1{
+  font-family: Poppins;
+  text-align: center;
+  color: yellow;
+}
+.input .username,.email{
+  width: 34.6vh;
+  padding: 10px;
+  outline: none;
+  
+}
+.erea{
+  height: 25vh;
+  padding: 10px;
+  outline: none;
+}
+textarea{
+  resize: none;
+  overflow-y: hidden;
+}
+.informations{
+  line-height: 30px;
+  font-family: Poppins;
+  color: white;
+}
+.inputs button{
+  border: 1px solid white;
+  height:6vh ;
+  border-radius: 5px;
+  background-color: yellow;
+  font-family: Poppins;
+}
+.inputs button:hover{
+  color: black;
+  background-color: rgba(255, 255, 0, 0.267);
+}
+.Section-Contact{
+  background-color: rgb(30, 29, 29);
+}
+.contact{
+  transform: translateY(10vh);
+}
+@media screen and (max-width:768px){
+  
+  .Blog::-webkit-scrollbar{
+    width: 10px;
+  }
+  .testimonials::-webkit-scrollbar{
+    width: 10px;
+  }
+  .desc::after{
+    top: -100px;
+  }
+  .contact{
+    width: 70%;
+  }
+  .Section-Contact::-webkit-scrollbar{
+    width:10px;
+  }
+}
+footer{
+  background-color: rgb(42, 43, 42);
+  height: 40vh;
+  justify-items: center;
+  text-align: center;
+  
+}
+footer i{
+  margin-left: 50px;
+  color: yellow;
+}
+footer div{
+  transform: translateY(90px);
+}
+footer div a i:hover{
+  color: rgba(255, 255, 0, 0.269);
+}
